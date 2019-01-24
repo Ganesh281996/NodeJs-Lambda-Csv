@@ -1,0 +1,19 @@
+{
+  "name": "aws-nodejs-lambda-callapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.392.0",
+    "csvjson": "^5.1.0",
+    "jsonwebtoken": "^8.4.0",
+    "npm": "^6.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
