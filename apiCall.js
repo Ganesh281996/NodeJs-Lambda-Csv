@@ -1,7 +1,7 @@
 var request = require('request');
 var jwt = require('jsonwebtoken');
 
-var token = jwt.sign({name : 'ganesh'},'itssecret');
+var token = jwt.sign({name : 'SomeUser'},'itssecret');
 console.log('TOKEN = ',token);
 
 exports.requestToApi = function(jsonData , callback){

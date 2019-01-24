@@ -9,10 +9,8 @@ exports.handler = function(event,context,callback){
     var newJsonData = [];
 
     var bucketDetails = {
-        // Bucket : event.Records[0].s3.bucket.name,
-        // Key : event.Records[0].s3.object.key
-        Bucket : 'read-from-s3-nodejs-call-api',
-        Key : 'someCSV.csv'
+        Bucket : event.Records[0].s3.bucket.name,
+        Key : event.Records[0].s3.object.key
     };
     console.log('PARAMS = ',bucketDetails);
 

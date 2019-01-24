@@ -11,8 +11,6 @@ exports.handler = function(event,context,callback){
     const bucketDetails = {
         Bucket : event.Records[0].s3.bucket.name,
         Key : event.Records[0].s3.object.key
-        // Bucket : 'read-from-s3-nodejs-call-api',
-        // Key : 'someCSV.csv'
     };
     console.log('PARAMS = ',bucketDetails);
 
